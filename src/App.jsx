@@ -5,6 +5,8 @@ import About from "./Pages/About";
 import Error from "./Pages/Error";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import SingleMeal from "./Pages/SingleMeal";
+import Banner from "./Components/Banner";
 
 function App() {
    return (
@@ -14,6 +16,7 @@ function App() {
          <Routes>
            <Route path="/" element={<Home />} />
            <Route path="/About" about element={<About />} />
+           <Route path="/meal/:mealId" element={<SingleMeal />}/>
            <Route path="*" element={<Error />} />
          </Routes>
          <Footer />
